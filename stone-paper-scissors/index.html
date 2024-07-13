@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-Paper-Scissor Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Stone Paper Scissor</h1>
+
+    <div class="first" id="start-section">
+        <div id="starting">
+            <h2>Ultimate Stone-Paper-Scissors Game!</h2>
+            <button id="start-button">Start Game</button>
+        </div>
+
+        <!-- Instructions -->
+        <h2>How to Play</h2>
+        <div id="instructions" class="hidden">
+            <div class="instruction">
+                <img src="./images/stone.png" alt="Stone Icon">
+                <p>Stone beats Scissors</p>
+            </div>
+            <div class="instruction">
+                <img src="./images/paper.png" alt="Paper Icon">
+                <p>Paper beats Stone</p>
+            </div>
+            <div class="instruction">
+                <img src="./images/scissor.png" alt="Scissors Icon">
+                <p>Scissors beat Paper</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Interface -->
+    <div id="game-interface" class="second hidden">
+        <div id="player-selection">
+            <h2>Choose Your Move</h2>
+            <div class="options">
+                <img src="./images/stone.png" alt="Stone" class="move" data-move="stone">
+                <img src="./images/paper.png" alt="Paper" class="move" data-move="paper">
+                <img src="./images/scissor.png" alt="Scissors" class="move" data-move="scissors">
+            </div>
+        </div>
+
+        <div id="Choices">
+            <div id="user-choice">
+                <h3>Your Turn</h3>
+                <img src="./images/placeholder-icon.png" id="user-move">
+            </div>
+            <div id="computer-choice">
+                <h3>Computer's Turn</h3>
+                <img src="./images/placeholder-icon.png" id="computer-move">
+            </div>
+        </div>
+
+        <div id="result-display">
+            <h2 id="result-head">Result</h2>
+            <p id="result-message">Make your move!</p>
+        </div>
+
+        <div id="scoreboard">
+            <h2>Scoreboard</h2>
+            <p>You: <span id="user-score">0</span></p>
+            <p>Computer: <span id="computer-score">0</span></p>
+        </div>
+        <div class="btns">
+            <button id="finish-button">Finish game</button>
+            <button id="replay-button">Play Again</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
